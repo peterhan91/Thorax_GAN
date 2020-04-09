@@ -1,0 +1,1 @@
+python dataset_tool.py create_from_images_labels /media/tianyu.han/mri-scratch/DeepLearning/dataset/CheXpert_256 /media/tianyu.han/mri-scratch/DeepLearning/CheXpert_Dataset/images/ /media/tianyu.han/mri-scratch/DeepLearning/CheXpert_Dataset/labels/ label_CheXpert.npy
