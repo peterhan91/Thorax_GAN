@@ -93,6 +93,7 @@ If you use this code for your research, please cite our papers.
 
 * Official progressive growing GAN code in TensorFlow: https://github.com/tkarras/progressive_growing_of_gans/blob/master/README.md
 * Official Cycle-GAN code in Pytorch: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+* The Stanford Machine Learning Group: https://stanfordmlgroup.github.io/
 
 
 
