@@ -91,6 +91,9 @@ If you use this code for your research, please cite our papers.
   publisher={Cold Spring Harbor Laboratory}
 }
 ```
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
