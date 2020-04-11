@@ -19,6 +19,7 @@ can compensate for underrepresented disease entities. By integrating federated l
 even small hospitals can participate in the training of GMs. We envision that our approach could
 lead to scalable databases of anonymous medical images enabling standardized radiomic analyses
 at multiple sites.
+<img src="https://raw.githubusercontent.com/peterhan91/Thorax_GAN/master/method.png" width="600">
 
 ## Prerequisites
 
@@ -58,12 +59,14 @@ python dataset_tool.py create_from_images_labels /media/tianyu.han/mri-scratch/D
 * After training is converged, one can use `ProGAN.reproduce_trainset.ipynb` to produce artificial radiographs 
 * The trained NIH and CheXpert GAN models can be downloaded from this [link](https://drive.google.com/open?id=1SlljNOpXNg5ZdmnKXS7RsHzdL0mlIQD4). 
 * For evaluating the training of GANs, one can compute Frechet Inception Distance and MS-SSIM by using `ProGAN.metrics.frechet_inception_distance.py` and `SSIM.ms_ssim.py` 
+<img src="https://raw.githubusercontent.com/peterhan91/Thorax_GAN/master/GAN_example.png" width="400">
 
 ## Classifying Chest Radiograph
-Inspired by the previous work of [CheXnet](https://stanfordmlgroup.github.io/projects/chexnet/), we trained a DenseNet-121 (ImageNet weights) classifier to evaluate the performance of generated radiographs. The code of classifier is contained in folder `Thorax Classifier`.
+Inspired by the previous work of [CheXnet](https://stanfordmlgroup.github.io/projects/chexnet/), we trained a DenseNet-121 (ImageNet weights) classifier to evaluate the performance of generated radiographs. The code of classifier is contained in folder `Thorax Classifier`.s
 * modify the path in `retrain.py` and simply run `python retrain.py`
 * All used classifier models can be downloaded via this [link](https://drive.google.com/open?id=1VG68ctmLeU8lAEko5GNzWpYbFklX7-Zn).
 * To obtain the confidence interval, one can use bootstrapping method by run `python -m Analysis.bootstrapping`.
+<img src="https://raw.githubusercontent.com/peterhan91/Thorax_GAN/master/results.png" width="600">
 
 ## Exploring the pathological correlation of generated radiographs
 For each pathology, 5,000 random artificial radiographs with a pathology label drawn from a uniform distribution
