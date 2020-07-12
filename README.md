@@ -3,6 +3,7 @@ Provides necessary python code used in our paper: [Breaking Medical Data Sharing
 
 ## Update
 * MS-SSIM histogram results is uploaded to `SSIM.Results` folder.
+* Add code for federated learning GAN at `Federated_GAN` folder.
 
 ## Abstract
 
